@@ -29,7 +29,6 @@ using ::testing::Invoke;
 
 static constexpr std::chrono::seconds kMstStateWaitingTime(10);
 static constexpr std::chrono::seconds kSynchronizerWaitingTime(10);
-static constexpr std::chrono::seconds kOrderingMessageWaitingTime(10);
 
 class FakePeerExampleFixture : public AcceptanceFixture {
  public:
