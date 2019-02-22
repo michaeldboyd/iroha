@@ -254,7 +254,6 @@ TEST_F(FakePeerExampleFixture, SynchronizeTheRightVersionOfForkedLedger) {
 
   // wait for the real peer to commit the blocks and check they are from the
   // valid branch
-  std::atomic_bool commited_all_blocks(false);
   itf.getIrohaInstance()
       .getIrohaInstance()
       ->getStorage()
