@@ -65,6 +65,8 @@ namespace integration_framework {
                               TransportFactoryType> proposal_factory,
           std::shared_ptr<iroha::ametsuchi::TxPresenceCache> tx_presence_cache);
 
+      ~FakePeer();
+
       /// Initialization method.
       /// \attention Must be called prior to any other instance method (except
       /// for constructor).
