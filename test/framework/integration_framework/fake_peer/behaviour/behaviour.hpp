@@ -71,7 +71,7 @@ namespace integration_framework {
       logger::Logger &getLogger();
 
      private:
-      std::weak_ptr<FakePeer> fake_peer_wptr_;
+      std::shared_ptr<FakePeer> fake_peer_;
       std::vector<rxcpp::subscription> subscriptions_;
       logger::Logger log_;
     };
